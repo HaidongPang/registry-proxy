@@ -45,6 +45,29 @@ OCI_Registry-->>Worker: Successfully Responds
 Worker-->>User: Returns Response from OCI Registry
 ```
 
+## Demo
+
+| Target SVC  | Proxy SVC                                       |
+|------|---------------------------------------------|
+| ghcr | ghcr.registry.mjolnir.tools |
+| ghcr | ghcr.registry.haidong.technology |
+| gcr | gcr.registry.mjolnir.tools |
+| gcr | gcr.registry.haidong.technology |
+| docker | docker.registry.mjolnir.tools |
+| docker | docker.registry.haidong.technology |
+| k8s | k8s.registry.mjolnir.tools |
+| k8s | k8s.registry.haidong.technology |
+
+Try it:
+
+```shell
+docker pull ghcr.registry.mjolnir.tools/haidongpang/hello-world
+
+# or
+
+docker pull ghcr.registry.haidong.technology/haidongpang/hello-world
+```
+
 ## Local Dev
 
 ### Requirements
