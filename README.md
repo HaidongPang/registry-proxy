@@ -1,5 +1,6 @@
 # registry-proxy
 Use Cloudflare Workers to proxy repositories that implement OCI Distribution Spec (ghcr, gcr, etc.)
+> Inspired by [cloudflare-docker-proxy](https://github.com/ciiiii/cloudflare-docker-proxy)
 
 ![GitHub Workflow Status](https://github.com/HaidongPang/registry-proxy/actions/workflows/main.yml/badge.svg)
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-f38020)
