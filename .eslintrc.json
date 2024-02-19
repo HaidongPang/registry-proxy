@@ -1,0 +1,62 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/strict",
+        "plugin:@typescript-eslint/stylistic"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "tsconfigRootDir": "./"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "@typescript-eslint/consistent-type-definitions": "off",
+        "sort-imports": [
+            "error",
+            {
+                "ignoreCase": true,
+                "ignoreDeclarationSort": false,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": [
+                    "none",
+                    "all",
+                    "multiple",
+                    "single"
+                ],
+                "allowSeparatedGroups": false
+            }
+        ],
+        "indent": "off",
+        "@typescript-eslint/indent": "error",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": "error",
+        "space-before-blocks": "off",
+        "@typescript-eslint/space-before-blocks": "error",
+        "space-infix-ops": "off",
+        "@typescript-eslint/space-infix-ops": "error",
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "comma-spacing": "off",
+        "@typescript-eslint/comma-spacing": "error",
+        "object-curly-spacing": "off",
+        "@typescript-eslint/object-curly-spacing": [
+            "error",
+            "always",
+            {
+                "objectsInObjects": true,
+                "arraysInObjects": true
+            }
+        ]
+    }
+}
