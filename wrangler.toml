@@ -1,0 +1,9 @@
+name = "registry-proxy"
+compatibility_date = "2024-01-29"
+[[kv_namespaces]]
+binding = "REGISTRY_MAPS"
+id = ""
+[dev]
+ip = "127.0.0.1"
+port = 8888
+local_protocol = "https"
