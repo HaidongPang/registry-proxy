@@ -2,7 +2,7 @@ name = "registry-proxy"
 compatibility_date = "2024-01-29"
 [[kv_namespaces]]
 binding = "REGISTRY_MAPS"
-id = ""
+id = "4293fcd3fe1a43fea25adab94a739c4a"
 [dev]
 ip = "127.0.0.1"
 port = 8888
