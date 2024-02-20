@@ -15,6 +15,7 @@ Use Cloudflare Workers to proxy repositories that implement OCI Distribution Spe
 - [x] **Simple Configuration**: Easily manage proxy settings by editing JSON data in KV.
 - [ ] **R2 Object Storage Caching**: Implement caching of images using Cloudflare's R2 Storage Buckets.
 - [ ] **Configuration Management RESTful API**: Develop a RESTful API for easier and more flexible configuration management.
+- [ ] **Implement the push API**
 
 ## Sequence Diagram
 
@@ -49,14 +50,10 @@ Worker-->>User: Returns Response from OCI Registry
 
 | Target SVC  | Proxy SVC                                       |
 |------|---------------------------------------------|
-| ghcr | ghcr.registry.mjolnir.tools |
-| ghcr | ghcr.registry.haidong.technology |
-| gcr | gcr.registry.mjolnir.tools |
-| gcr | gcr.registry.haidong.technology |
-| docker | docker.registry.mjolnir.tools |
-| docker | docker.registry.haidong.technology |
-| k8s | k8s.registry.mjolnir.tools |
-| k8s | k8s.registry.haidong.technology |
+| ghcr | ghcr.registry.mjolnir.tools , ghcr.registry.haidong.technology |
+| gcr | gcr.registry.mjolnir.tools , gcr.registry.haidong.technology |
+| docker | docker.registry.mjolnir.tools , docker.registry.haidong.technology |
+| k8s | k8s.registry.mjolnir.tools , k8s.registry.haidong.technology |
 
 Try it:
 
